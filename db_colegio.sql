@@ -1,3 +1,4 @@
+drop database if exists colegio;
 create database colegio;
 use colegio;
 create table estudiante (
@@ -11,13 +12,6 @@ id_asis int auto_increment primary key,
 estudiante_id int , 
 fecha date, 
 estado varchar (20)
-);
-
-create table his_asistencia(
-id int auto_increment primary key, 
-estudiante_id int, 
-mensaje text, 
-fecha datetime 
 );
 
 
